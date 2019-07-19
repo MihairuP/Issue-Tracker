@@ -34,7 +34,6 @@ public class IssueDao {
     }
 
     public List<IssueDto> showAllIssues() {
-//        List<IssueDto> issueDtoList = new List<IssueDto>();
         return jdbcTemplate.query("SELECT * FROM issues",
                 (rs, rowNum) -> {
                     IssueDto issueDto = new IssueDto(rs.getInt("id"),
@@ -74,9 +73,6 @@ public class IssueDao {
                 id
         });
         return showIssueId(id);
-
-
-
     }
 }
 
