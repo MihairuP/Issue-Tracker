@@ -1,0 +1,1 @@
+CREATE TABLE issues(id serial, name text not null, description text, estimation_time text, spent_time text);

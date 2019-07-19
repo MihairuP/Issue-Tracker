@@ -1,4 +1,5 @@
 package com.mihairu.issueTracker.dao;
+//Data Transfer Object for issues available for JSON to be produced via SPRING
 
 import javax.validation.constraints.NotNull;
 
